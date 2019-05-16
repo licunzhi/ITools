@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        /*flex进行布局操作*/
+        .pop-content{
+            padding: 0;
+            margin: 0;
+            height: 20rem;
+            width: 30rem;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            /*排序项目的方向*/
+            flex-direction: row;
+        }
+
+        /*左侧做滑动菜单*/
+        .left {
+            width: 6rem;
+            height: 100%;
+            border-right: 1px olivedrab;
+            background-color: #f1f1f1;
+            overflow: auto;
+        }
+        .left ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .left ul li a {
+            display: block;
+            color: #000;
+            padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+            text-decoration: none;
+        }
+        /* 鼠标移动到选项上修改背景颜色 */
+        li a:hover {
+            background-color: #66af6d;
+            color: white;
+        }
+        /*右侧动态替换*/
+        .right {
+            width: 25rem;
+            height: 100%;
+            overflow: auto;
+        }
+
+        /*点击事件激活的位置*/
+        .active {
+            background-color: #39af4e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="pop-content">
+    <div id="leftContent" class="left">
+        <ul>
+            <li index="1" urlPath="../html/timestamp/index.html"><a>时间戳转换</a></li>
+            <li index="2" urlPath="../html/tips/information.html"><s><a>加密算法</a></s></li>
+            <li index="3" urlPath="../html/tips/information.html"><s><a>期待中</a></s></li>
+        </ul>
+    </div>
+    <div id="rightContent" class="right">
+    </div>
+</div>
+</body>
+
+<script src="../js/jquery/jquery.min.js"></script>
+<script src="../js/utils/templateUtils.js"></script>
+<script src="../js/consts/constants.js"></script>
+<script src="../js/popup.js"></script>
+</html>

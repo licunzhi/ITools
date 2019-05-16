@@ -1,0 +1,54 @@
+<!--
+    @author: sakura_rain
+    @date: 2019-05
+    @version 1.0
+    @since: 1.0
+-->
+<style>
+    .timestamp {
+        margin-top: 2rem;
+        padding-left: 2rem;
+    }
+
+    .button {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: red;
+    }
+
+    input {
+        width: 7rem;
+        margin-top: 0.2rem;
+    }
+
+    .stop {
+        background: red;
+    }
+    .start {
+        background: green;
+    }
+</style>
+<h3 style="text-align: center">时间戳在线转换</h3>
+<div class="timestamp">
+    <span><h3>当前时间:</h3></span>
+    <input type="text" id="currentMillions" value="">
+    控制：<button class="button"></button>
+
+    <span><h3>时间戳:</h3></span>
+    <input type="text" id="readyConvert" value="">
+    <select name="timeType" id="timeType">
+        <option value="{Y}-{M}-{D}" selected>{Y}-{M}-{D}</option>
+        <option value="{Y}-{M}-{D} {hh}:{mm}:{ss}">{Y}-{M}-{D} {hh}:{mm}:{ss}</option>
+    </select>
+    <button id="convertAction">转换>></button>
+    <input style="width: 8rem" type="text" id="convertResult" value="">
+
+    <span><h3>时间:</h3></span>
+    <input style="width: 8rem" type="text" id="readyConvertDate" value="">
+    <select name="dateType" id="dateType">
+        <option value="s" selected>s(秒)</option>
+        <option value="ms">ms(毫秒)</option>
+    </select>
+    <button id="convertActionDate">转换>></button>
+    <input type="text" id="convertResultDate" value="">
+</div>

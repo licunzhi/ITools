@@ -1,0 +1,47 @@
+{
+  "name": "ITools",
+  "author": "sakura_rain",
+  "version": "1.0",
+  "description": "程序员开发实用工具箱 1.0: 时间戳",
+  // 存储的权限 storage
+  // 自定义工具弹窗的内容 declarativeContent
+  // 允许执行操作脚本的权限 activeTab
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "./js/jquery/jquery.min.js",
+      "./js/background.js"
+    ],
+    "persistent": false
+  },
+  // 配置点击展示页面
+  "page_action": {
+    // 展示在页面的提示按钮
+    "default_popup": "./html/popup.html",
+    // 插件图标的大小
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
+  // 配置选项页面
+  "options_page": "./html/options.html",
+  // 插件页面展示的图标
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
+}
