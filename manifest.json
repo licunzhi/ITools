@@ -17,6 +17,7 @@
   "background": {
     "scripts": [
       "./js/jquery/jquery.min.js",
+      "./js/md5/md5.js",
       "./js/background.js"
     ],
     "persistent": false

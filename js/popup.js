@@ -37,5 +37,6 @@ function extralInitBeforeReloadNewPage() {
     /*页面定时器*/
     clearInterval();
     /*清除上一次优化缓存*/
+    localStorage.removeItem('TS');
     localStorage.removeItem('SAKURA');
 }

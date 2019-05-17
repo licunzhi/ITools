@@ -1,0 +1,54 @@
+<!--
+    @author: sakura_rain
+    @date: 2019-05
+    @version 2.0
+    @since: 2.0
+-->
+<style>
+    .endecode p {
+        background: #39af4e;
+    }
+
+    p a {
+        padding: 0.2rem;
+        color: black;
+    }
+
+    p a:hover {
+        cursor: pointer;
+    }
+
+</style>
+<div class="endecode">
+    <h3 style="text-align: center">加密工具</h3>
+
+    <!--顶级菜单-->
+    <p id="encodeMenu">
+        <a area="md5Area" class="active">MD5加密</a>
+        <a area="base64Area">Base64加密</a>
+        <a>1</a>
+    </p>
+
+    <!--md5加密的方式-->
+    <div class="area" id="md5Area">
+        <textarea  id="md5Ready" title="未加密原始数据" rows="5" style="width: 90%">dream on sakura rain</textarea>
+        <select name="md5Type" id="md5Type">
+            <option value="hex_md5" selected>hex_md5</option>
+            <option value="b64_md5">b64_md5</option>
+            <option value="str_md5">str_md5</option>
+            <option value="hex_hmac_md5">hex_hmac_md5</option>
+            <option value="b64_hmac_md5">b64_hmac_md5</option>
+            <option value="str_hmac_md5">str_hmac_md5</option>
+        </select>
+        <input id="md5Key" type="text" placeholder="请输入key值" style="display: none">
+        <button class="button" id="md5Convert">↓加密</button>
+        <!--<button class="button" id="md5Back">↑解密</button>-->
+        <textarea  id="md5Result" title="未加密原始数据" rows="5" style="width: 90%"></textarea>
+    </div>
+
+
+    <!--Base64位加密的方式-->
+    <div class="area" id="base64Area" style="display: none">
+        加密实现暂未完成
+    </div>
+</div>
