@@ -1,4 +1,4 @@
-## 工具箱插件开发
+## 工具箱插件开发（Chrome）
 
 ### version 1.0版本  
 ### 1、支持时间戳转换操作 下载地址：[ITools-1.0.crx](https://raw.githubusercontent.com/licunzhi/ITools/master/crx/ITools-1.0.crx)  
