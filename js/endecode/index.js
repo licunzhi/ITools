@@ -76,7 +76,28 @@ $(function () {
             TS[$(value).attr('id')] = $(value).val();
         });
         localStorage.setItem('SAKURA', JSON.stringify(TS));
-    })
+    });
+
+
+    /*Base64位加密代码位置-----start*/
+    $('#base64Convert').click(function () {
+        var base64Type = $('#base64Type option:selected').val();
+        var convertResult = $('#base64Ready').val();
+        switch (base64Type) {
+            case 'encode' :
+                convertResult = Base64.encode(convertResult);
+                break;
+            case 'encodeURI' :
+                convertResult = Base64.encodeURI(convertResult);
+                break;
+            case 'decode' :
+                convertResult = Base64.decode(convertResult);
+                break;
+            default:
+                break;
+        }
+        $('#base64Result').val(convertResult);
+    });
 });
 
 var TS = {};

@@ -49,6 +49,13 @@
 
     <!--Base64位加密的方式-->
     <div class="area" id="base64Area" style="display: none">
-        加密实现暂未完成
+        <textarea  id="base64Ready" title="未加密原始数据" rows="5" style="width: 90%">dream on sakura rain</textarea>
+        <select name="md5Type" id="base64Type">
+            <option value="encode" selected>encode</option>
+            <option value="encodeURI">encodeURI</option>
+            <option value="decode">decode</option>
+        </select>
+        <button class="button" id="base64Convert">↓转换</button>
+        <textarea  id="base64Result" title="未加密原始数据" rows="5" style="width: 90%"></textarea>
     </div>
 </div>
