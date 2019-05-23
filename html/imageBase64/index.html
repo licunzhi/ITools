@@ -7,7 +7,7 @@
 
 <style>
     .endecode p {
-        background: #39af4e;
+        background: #6588af;
     }
 
     p a {
@@ -20,6 +20,10 @@
         cursor: pointer;
     }
 
+    .active {
+        background: #6588af;
+    }
+
 </style>
 
 <div class="endecode">
@@ -28,22 +32,22 @@
     <!--md5加密的方式-->
     <div class="area" id="imageToBase64">
         <input type="file" id="imageBase64">
-        <button style="margin: 0.5rem; background: #39af4e; color: white;" class="button" id="imageConvertBase64">
+        <button style="margin: 0.5rem; background: #6588af; color: white;" class="button" id="imageConvertBase64">
             ↓Base64
         </button>
         <textarea name="Word" id="base64Result" title="加密之后的数据信息" rows="7" style="width: 90%"></textarea>
         <span>
             <button
-                    style="margin: 0.5rem; background: #39af4e; color: white;border-radius: 1rem" class="button"
+                    style="margin: 0.5rem; background: #6588af; color: white;border-radius: 1rem" class="button"
                     id="base64ResultCopy">复制</button>
             <button
-                    style="margin: 0.5rem; background: #39af4e; color: white;border-radius: 1rem" class="button"
+                    style="margin: 0.5rem; background: #6588af; color: white;border-radius: 1rem" class="button"
                     id="base64ResultEmpty">清空</button>
             <span id="imageSize" style="margin-left: 2rem">图片大小：---</span>
         </span>
         <hr>
         <span>
-            <button style="margin: 0.5rem; background: #39af4e; color: white;border-radius: 1rem" class="button"
+            <button style="margin: 0.5rem; background: #6588af; color: white;border-radius: 1rem" class="button"
                     id="base64BackImage">Base64Code还原成图片
             </button>
         </span>

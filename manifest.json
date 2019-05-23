@@ -2,7 +2,7 @@
   "name": "ITools",
   "author": "sakura_rain",
   "version": "1.0",
-  "description": "程序员开发实用工具箱 1.0: 时间戳",
+  "description": "程序员开发实用工具箱 2.0: 加密算法",
   // 存储的权限 storage
   // 自定义工具弹窗的内容 declarativeContent
   // 允许执行操作脚本的权限 activeTab
@@ -36,7 +36,7 @@
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
   // 配置选项页面
-  "options_page": "./html/options.html",
+  "options_page": "./html/tips/information.html",
   // 插件页面展示的图标
   "icons": {
     "16": "images/get_started16.png",

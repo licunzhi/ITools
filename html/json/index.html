@@ -1,0 +1,64 @@
+<!--
+    @author: sakura_rain
+    @date: 2019-05
+    @version 3.0
+    @since: 3.0
+-->
+<style>
+    /*上层目录菜单样式集中处理*/
+    .jsonFormat .options {
+        background: #8db2e3;
+        list-style: none;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    .jsonFormat ul li {
+        display: inline-block;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    .jsonFormat ul li:hover {
+        background: #8DB2C8;
+        color: white;
+        margin: 0.2rem;
+    }
+
+    .active {
+        background: #8DB2C8;
+        color: white;
+    }
+
+
+    /*jsonShow中的样式处理*/
+    #jsonShow button {
+        margin: 0rem;
+        padding: 0rem;
+        border: 1px solid transparent;
+        background: #8DB2C8;
+    }
+</style>
+<h3 style="text-align: center">Json格式化</h3>
+<div class="jsonFormat">
+    <ul class="options">
+        <li area='jsonShow' class="active">JSON数据展示</li>
+        <li area='jsonView'>JSON视图</li>
+    </ul>
+
+    <!--jsonShow-->
+    <div class="area" id="jsonShow">
+        <div style="background: #8DB2C8; border: 1px white;">
+            <button>复制</button>
+            <button>格式化</button>
+            <button>删除空格</button>
+            <button>删除空格转义</button>
+            <button>去除转义</button>
+        </div>
+    </div>
+
+    <!--jsonView-->
+    <div class="area" id="jsonView" style="display: none">
+        jsonView
+    </div>
+</div>
