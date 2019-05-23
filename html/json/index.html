@@ -32,28 +32,31 @@
 
 
     /*jsonShow中的样式处理*/
-    #jsonShow button {
-        margin: 0rem;
-        padding: 0rem;
-        border: 1px solid transparent;
-        background: #8DB2C8;
+    .jsonTextArea {
+        margin-top: 1rem;
     }
 </style>
 <h3 style="text-align: center">Json格式化</h3>
 <div class="jsonFormat">
     <ul class="options">
         <li area='jsonShow' class="active">JSON数据展示</li>
-        <li area='jsonView'>JSON视图</li>
+        <!--<li area='jsonView'>JSON视图</li>-->
     </ul>
 
     <!--jsonShow-->
     <div class="area" id="jsonShow">
         <div style="background: #8DB2C8; border: 1px white;">
-            <button>复制</button>
-            <button>格式化</button>
-            <button>删除空格</button>
-            <button>删除空格转义</button>
-            <button>去除转义</button>
+            <button id="copyJson">复制</button>
+            <button id="formatJson">格式化</button>
+            <button id="deleteSpace">删除空格</button>
+            <button id="deleteSpaceFormat">删除空格并转义</button>
+            <button id="deleteFormat">去除转义</button>
+            <button id="deleteFormatAndFormat">去除转义并格式化</button>
+        </div>
+        <div class="jsonTextArea">
+            <textarea name="jsonText" id="jsonText" cols="49%" rows="30%">{
+    "name":"sakura"
+}</textarea>
         </div>
     </div>
 
